@@ -6,6 +6,7 @@ html {
 .container{
     margin-top: 70px;
     text-align: center;
+    font-family: 'Inconsolata', monospace;
 }
 .key {
     background-color: #424242;
@@ -26,12 +27,42 @@ html {
 .keyboard{
     text-align: center;
     font-family: 'Cutive Mono', monospace;
-    margin-top: 50px;
+    margin-top: 30px;
 }
 #space{
     width: 500px;
     border-radius: 40%;
 }
 .game-menu{
-    margin-top: 80px;
+    margin-top: 12S0px;
+}
+.wrong-key{
+    background-color: rgb(83, 53, 53);
+    font-weight: bold;
+    font-size: 50px;
+    margin: 0px;
+    height: 58px;
+    width: 60px;
+    border: 6px solid rgb(114, 36, 0);
+    color: rgb(34, 11, 0);
+    padding-top: 2px;
+    
+}
+.correct-key{
+    background-color: rgb(69, 78, 63);
+    font-weight: bold;
+    font-size: 50px;
+    margin: 0px;
+    height: 58px;
+    width: 60px;
+    border: 6px solid rgb(18, 71, 29);
+    color: rgb(0, 34, 0);
+    padding-top: 2px;}
+.fire-key{
+    background-color: rgb(126, 126, 126);
+    font-size: 50px;
+    margin: 0px;
+    height: 58px;
+    width: 60px;
+    padding-top: 2px;
 }
