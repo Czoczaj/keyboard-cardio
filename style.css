@@ -1,23 +1,37 @@
-.container {
-    font-family: 'Cutive Mono', monospace;
+html {
+    background-image: url(http://2016.festiwalhaupta.pl/www.festiwalhaupta.pl/wp-content/themes/crystal/timthumbb0b6.jpg?w=1300&src=http://www.festiwalhaupta.pl/wp-content/uploads/2016/09/MICHA%C5%81-CICHY-Zawsze-jest-dzisiaj-%C2%A9-www.czarne.com_.pl-1.jpg);
+    background-size: cover;
+    color: rgb(185, 185, 185);
+}
+.container{
+    margin-top: 70px;
     text-align: center;
 }
 .key {
-    background-color: rgb(66, 66, 66);
+    background-color: #424242;
     height: 50px;
     width: 50px;
     border: 5px solid rgb(78, 57, 7);
     border-radius: 50%;
     font-size: 40px;
     float: left;
-    margin: 5px;
+    margin: 9px;
     font-family: 'Cutive Mono', monospace;
+    color: black;
 }
 .keys {
     display: flex;
     justify-content: center;
 }
 .keyboard{
+    text-align: center;
     font-family: 'Cutive Mono', monospace;
-    margin-top: 150px;
+    margin-top: 50px;
+}
+#space{
+    width: 500px;
+    border-radius: 40%;
+}
+.game-menu{
+    margin-top: 80px;
 }
