@@ -10,13 +10,13 @@ html {
 }
 .key {
     background-color: #424242;
-    height: 50px;
-    width: 50px;
+    height: 45px;
+    width: 45px;
     border: 5px solid rgb(78, 57, 7);
     border-radius: 50%;
-    font-size: 40px;
+    font-size: 35px;
     float: left;
-    margin: 9px;
+    margin: 7px;
     font-family: 'Cutive Mono', monospace;
     color: black;
 }
@@ -27,7 +27,7 @@ html {
 .keyboard{
     text-align: center;
     font-family: 'Cutive Mono', monospace;
-    margin-top: 30px;
+    margin-top: 160px;
 }
 #space{
     width: 500px;
@@ -39,30 +39,32 @@ html {
 .wrong-key{
     background-color: rgb(83, 53, 53);
     font-weight: bold;
-    font-size: 50px;
-    margin: 0px;
-    height: 58px;
-    width: 60px;
+    font-size: 40px;
+    margin: 4px;
+    height: 50px;
+    width: 52px;
     border: 6px solid rgb(114, 36, 0);
     color: rgb(34, 11, 0);
-    padding-top: 2px;
+    padding-top: 3px;
     
 }
 .correct-key{
+    margin: 18px;
     background-color: rgb(69, 78, 63);
     font-weight: bold;
-    font-size: 50px;
-    margin: 0px;
-    height: 58px;
-    width: 60px;
+    font-size: 40px;
+    margin: 4px;
+    height: 50px;
+    width: 52px;
     border: 6px solid rgb(18, 71, 29);
     color: rgb(0, 34, 0);
-    padding-top: 2px;}
+    padding-top: 3px;}
 .fire-key{
+    margin: 18px;
     background-color: rgb(126, 126, 126);
-    font-size: 50px;
-    margin: 0px;
-    height: 58px;
-    width: 60px;
-    padding-top: 2px;
+    font-size: 40px;
+    margin: 4px;
+    height: 50px;
+    width: 52px;
+    padding-top: 3px;
 }
