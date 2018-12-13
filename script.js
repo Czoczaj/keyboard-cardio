@@ -1,23 +1,20 @@
-const lista = document.querySelectorAll('[data-key]');
+const buttonsKey = document.getElementsByClassName('key');
 let lastKey;
 
-var losNum = function(min,max){
- return( Math.round(Math.random() * (max - min)) + min);
-}
+function getRandomNumber(min, max) {
+    return Math.floor(Math.random() * (max - min + 1) + min);
+};
 
-var losKey = function(){
-    var index = Math.floor(Math.random() * lista.length);
-    var key = lista[index];
+function getRandomKey() {
+    index = Math.floor(Math.random() * buttonsKey.length);
+    const key = buttonsKey[index];
     if (key === lastKey) {
-        return losKey;
+        console.log('The same key!!!')
+        return getRandomKey()
     }
     lastKey = key;
-    return key
-}
-var fireKey = function(){
-    var key = losKey();
-    key.classList.add('fire-key');
-    console.log(key.classList);
-    
+    return key;
 };
-fireKey();
+
+
+console.log(getRandomKey());
