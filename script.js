@@ -3,6 +3,7 @@ let lastKey;
 let offGame = true;
 let currentKey;
 let score = 0;
+let endScore = 2;
 
 function getRandomNumber(min, max) {
     return Math.floor(Math.random() * (max - min + 1) + min);
@@ -38,6 +39,7 @@ function endGame(){
 }
 function startGame(){
     window.addEventListener('keydown',checkKey);
+    showScore();
     offGame = false;
     peep();
 }
@@ -48,13 +50,25 @@ function addClass(key,klasa){
 function checkKey(event){
     console.log(event.keyCode);
     currentKey.classList.remove('fire-key');
+
     if(currentKey.attributes[0].value == event.keyCode){ 
         console.log(score);
-        addClass(currentKey,'correct-key');
+        currentKey.classList.add('correct-key');
         score ++;
+    menu.innerHTML = `<div class='scoreBoard'>score: ${score}</div>`;
+
+    if(score >= endScore){
+            offGame = true;
+        }
     }else {
         score --;
-        addClass(currentKey,'wrong-key');
+    menu.innerHTML = `<div class='scoreBoard'>score: ${score}</div>`;
+        console.log(event);
+        let wrongKey = document.querySelector('div[data-key="${e.keyCode}"]'); 
+        wrongKey.classList.add('wrong-key');
     }
 }
-peep();
+function showScore(){
+    menu = document.querySelector('.game-menu');
+    menu.innerHTML = `<div class='scoreBoard'>score: ${score}</div>`;
+}
